@@ -9,10 +9,15 @@ body {
 }
 
 a {
-  /* color: #ffffff;
-  text-decoration: none; */
+  color: #ffffff;
+  text-decoration: none;
 }
 
-p {
-  
+nav {
+  display: fixed;
 }
+
+section {
+  display: flex;
+}
+
