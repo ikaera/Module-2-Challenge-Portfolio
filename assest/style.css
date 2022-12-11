@@ -1,3 +1,9 @@
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,8 +11,14 @@
 }
 /* tag selectors */
 body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7em;
+  /* color: #777; */
   background-color: #d9dcd6;
-  margin: 10px;
+  /* margin: 10px;*/
+  padding: 30px; 
 }
 h2 {
   text-align: center;
@@ -39,18 +51,57 @@ ul {
   margin: 5px;
 }
 .header {
+  height: 95vh;
+  background-image: 
+    linear-gradient(to right bottom,  rgba(126, 213, 111, 0.801), #0d7754),
+    url(./Images/land.jpg);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
 }
-.banner {
-  background-image: url(./Images/coding-portfolio.jpeg);
-  width: 100%;
-  height: 800px;
-  background-size: cover;
-  background-position: center;
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 40px;  
+  }
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+}
+  .heading-primary {
+    color: #ffffff;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+  }
 
-}
+  .heading-primary-main {
+    display: block;
+    font-size: 55px;
+    font-weight: 400px;
+    letter-spacing: 35px;
+    line-height: 1.25em;
+  }
+
+  .heading-primary-sub {
+    display: block;
+    font-size: 40px;
+    font-weight: 700px;
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 2.25em;
+
+  }
 
 .row {
   display: flex;
@@ -65,15 +116,12 @@ ul {
   padding: 10px;
   gap: 20px;
 }
-.apps section {
-  /* margin: 20px;
-  padding: 20px; */
-}
+
 .apps img {
     width: 100%;
 }
 
-.apps section:hover {
+.apps div:hover {
   border: 2px dotted rgb(52, 190, 214);
 }
 .app {
@@ -107,24 +155,33 @@ ul {
     
     flex-basis: 100%;
   }
+  .logo-box {
+    display: none;
+  }
 
+  .heading-primary-main {
+    font-size: 30px;
+    font-weight: 400px;
+    letter-spacing: 15px;
+    line-height: 1.25em;
+  }
+
+  .heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 1.25em;
+  }
   /* Use flex-direction to stack the navbar, sidebar, and body */
-  nav, 
-  ul {
+  nav, ul {
     flex-direction: column;
   }
   /* Make the sidebar stack below the body */
   aside {
     order: 2;
   }
-  /* Change the header background */
-  header {
-    background:;
-  }
-  /* Change the navbar and footer background */
-  nav,
-  footer {
-    background-color:;
-  }
+  
 }
 
