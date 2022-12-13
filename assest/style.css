@@ -25,14 +25,17 @@ body {
   /* margin: 10px;*/
   /* padding: 30px;  */
 }
+
 h2 {
   text-align: center;
   margin: 5px;
 }
+
 a h2{
   color: #ffffff;
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
@@ -42,15 +45,24 @@ main {
   flex-direction: column; */
   padding: 30px;
 }
+
 ul {
   display: flex;
   justify-content: space-around;
 }
 
+ul > li  a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.74);
+  font-size: 2rem;  
+}
+
+/* Class selectors */
 .about-me p {
   position: relative;
   margin: 5px;
 }
+
 .my-photo {
   /* position: absolute; */
   border-radius: 20px ;
@@ -58,7 +70,7 @@ ul {
 }
 
 .hero {
-  height: 800px;
+    height: 95vh;
     width: 100%;
     margin-bottom: 25px;
     background-image: 
@@ -68,9 +80,10 @@ ul {
     background-position: bottom;
     clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 75vh, 0 100%);
 }
-.header {
-  /* height: 95vh; */
-  /* height: 800px;
+
+/* .header {
+  height: 95vh;
+  height: 800px;
   margin-bottom: 25px;
   background-image: 
     linear-gradient(to right bottom,  rgba(157, 168, 214, 0.801), #07135c),
@@ -83,8 +96,9 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
-  position: relative; */
-}
+  position: relative; 
+}*/
+
 .nav {
   display: flex;
   position: fixed;
@@ -98,21 +112,7 @@ ul {
   padding: .5rem;
   color: white; */
   }
-  /* 
-.row {
-  display: flex;
-  justify-content: flex-end; 
-  gap: 20px;  
-  color: white;
-}*/
-
-ul > li  a {
-  text-decoration: none;
-  color: rgba(0, 0, 255, 0.74);
-  font-size: 2rem;
   
-}
-
 .logo-box {
   position: absolute;
   top: 4.3rem;
@@ -120,7 +120,7 @@ ul > li  a {
   
 }
 .logo {
-  height: 17.5rem;  
+  height: 17rem;  
   }
 .text-box {
   position: absolute;
@@ -151,8 +151,8 @@ ul > li  a {
     text-align: center;
     line-height: 2.25em;
     animation: moveInRight 1s ease-out;
-
   }
+
 .par-about-me {
   text-align: justify;
   text-decoration: #07135c;
@@ -220,7 +220,7 @@ ul > li  a {
 
 @media screen and (max-width: 900px) { } */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
    /* Use flex-direction to stack the navbar and contact ul. */
    nav, ul {
     flex-direction: column;
