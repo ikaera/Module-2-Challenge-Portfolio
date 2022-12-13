@@ -74,7 +74,7 @@ ul > li  a {
     width: 100%;
     margin-bottom: 25px;
     background-image: 
-      linear-gradient(to right bottom, blue, white),
+      linear-gradient(to right bottom, hsla(251, 100%, 50%, 0.726), white),
       url(./Images/enjoy.jpg);
     background-size: cover;
     background-position: bottom;
