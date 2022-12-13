@@ -61,10 +61,11 @@ ul {
   height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: linear-gradient(to right bottom, blue, white),
-    url(./Images/enjoy.jpg);
+    background-image: 
+      linear-gradient(to right bottom, blue, white),
+      url(./Images/enjoy.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 75vh, 0 100%);
 }
 .header {
@@ -115,10 +116,11 @@ ul > li  a {
 .logo-box {
   position: absolute;
   top: 4.3rem;
-  left: 4.3rem;
+  /* left: 0.5rem; */
+  
 }
 .logo {
-  height: 9.5rem;  
+  height: 17.5rem;  
   }
 .text-box {
   position: absolute;
