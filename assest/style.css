@@ -9,6 +9,11 @@ Dark green: #28b485
   padding: 0;
   margin: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
 /* tag selectors */
 body {
   font-family: "Lato", sans-serif;
@@ -18,7 +23,7 @@ body {
   /* color: #777; */
   background-color: #d9dcd6;
   /* margin: 10px;*/
-  padding: 30px; 
+  /* padding: 30px;  */
 }
 h2 {
   text-align: center;
@@ -31,47 +36,89 @@ a h2{
 li {
   list-style-type: none;
 }
-nav {
-  display: flex;
-}
 
 main {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 30px;
 }
 ul {
   display: flex;
   justify-content: space-around;
 }
-#about-me img {
+
+.about-me p {
+  position: relative;
+  margin: 5px;
+}
+.my-photo {
+  /* position: absolute; */
   border-radius: 20px ;
   margin: 5px;
 }
-#about-me p {
-  margin: 5px;
+
+.hero {
+  height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to right bottom, blue, white),
+    url(./Images/enjoy.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 75vh, 0 100%);
 }
 .header {
-  height: 95vh;
+  /* height: 95vh; */
+  /* height: 800px;
+  margin-bottom: 25px;
   background-image: 
-    linear-gradient(to right bottom,  rgba(126, 213, 111, 0.801), #0d7754),
-    url(./Images/land.jpg);
+    linear-gradient(to right bottom,  rgba(157, 168, 214, 0.801), #07135c),
+    url(./Images/enjoy.jpg);
   background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
-  position: relative;
+  position: relative; */
 }
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* justify-content: flex-end; 
+  position: fixed; */
+  /* height: 50px;
+  top: 5px;
+  background-color: #07135c;
+  padding: .5rem;
+  color: white; */
+  }
+  /* 
+.row {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 20px;  
+  color: white;
+}*/
+
+ul > li  a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.74);
+  font-size: 2rem;
+  
+}
+
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4.3rem;
+  left: 4.3rem;
 }
 .logo {
-  height: 40px;  
+  height: 9.5rem;  
   }
 .text-box {
   position: absolute;
@@ -79,36 +126,36 @@ ul {
   left: 50%;  
   transform: translate(-50%, -50%);
 }
-  .heading-primary {
+.heading-primary {
     color: #ffffff;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
+    margin-bottom: 6rem;
   }
 
-  .heading-primary-main {
+.heading-primary-main {
     display: block;
-    font-size: 55px;
+    font-size: 6.5rem;
     font-weight: 400px;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     line-height: 1.25em;
   }
 
-  .heading-primary-sub {
+.heading-primary-sub {
     display: block;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700px;
-    letter-spacing: 8px;
+    letter-spacing: 1rem;
     text-align: center;
     line-height: 2.25em;
+    animation: moveInRight 1s ease-out;
 
   }
-
-.row {
-  display: flex;
-  gap: 10px;
+.par-about-me {
+  text-align: justify;
+  text-decoration: #07135c;
 }
-.apps {
-  
+  .apps {  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -128,7 +175,7 @@ ul {
   position: relative;
   flex-basis: calc(50% - 10px);
 }
-.app h3 {
+.app h4 {
   position: absolute;
   left: 0%;
   bottom: 5%;
@@ -139,49 +186,74 @@ ul {
 .app:first-child {
   flex-basis: 100%;
 }
+.contact-items {
+  margin-top: 50px;
+}
+.contact-me {
+  height: 200px;
+}
+.about-me h2, .work h2, .contact-me h2 {
+  font-size: 3rem;
+  color: rgb(7, 19, 73);
+}
+.footer {
 
+  background-color: #07135c;
+  height: 100px;
+  display: flex;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  letter-spacing: .5rem;
+  }
+  .copyright {
+    letter-spacing: .1rem;
+  }
+  
 
 /* media queries (desktop-first) */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) { } 
 
-} 
+@media screen and (max-width: 900px) { } */
 
-@media screen and (max-width: 900px) {
-  
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+   /* Use flex-direction to stack the navbar and contact ul. */
+   nav, ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    flex-direction: row;
+  }
   .app {
     
     flex-basis: 100%;
   }
-  .logo-box {
+  /* .logo-box {
     display: none;
-  }
+  } */
 
   .heading-primary-main {
-    font-size: 30px;
+    /* font-size: 30px;
     font-weight: 400px;
     letter-spacing: 15px;
-    line-height: 1.25em;
+    line-height: 1.25em; */
   }
 
   .heading-primary-sub {
-    display: block;
+    /* display: block;
     font-size: 20px;
     font-weight: 700px;
     letter-spacing: 8px;
     text-align: center;
-    line-height: 1.25em;
+    line-height: 1.25em; */
   }
-  /* Use flex-direction to stack the navbar, sidebar, and body */
-  nav, ul {
-    flex-direction: column;
+
+  .contact-items {
+    margin-top: 25px;
   }
-  /* Make the sidebar stack below the body */
-  aside {
-    order: 2;
-  }
-  
+    
 }
 
