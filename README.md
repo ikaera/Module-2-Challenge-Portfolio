@@ -31,7 +31,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ### link to deployed application:
-
+https://ikaera.github.io/Module-2-Challenge-Portfolio/
 
 ## Usage 
 ![](./assest/Images/Portpolio1.png)
