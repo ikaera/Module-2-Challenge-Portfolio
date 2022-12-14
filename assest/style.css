@@ -78,7 +78,7 @@ ul > li  a {
       url(./Images/enjoy.jpg);
     background-size: cover;
     background-position: bottom;
-    clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 75vh, 0 100%);
+    clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
 }
 
 /* .header {
