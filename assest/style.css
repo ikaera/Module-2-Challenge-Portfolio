@@ -81,23 +81,6 @@ ul > li  a {
     clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
 }
 
-/* .header {
-  height: 95vh;
-  height: 800px;
-  margin-bottom: 25px;
-  background-image: 
-    linear-gradient(to right bottom,  rgba(157, 168, 214, 0.801), #07135c),
-    url(./Images/enjoy.jpg);
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px;
-  position: relative; 
-}*/
 .header {
   position: relative;
 }
@@ -106,14 +89,8 @@ ul > li  a {
   position: fixed;
   top: 0;
   left: 0;
-  /* justify-content: flex-end; 
-  position: fixed; */
-  /* height: 50px;
-  top: 5px;
-  background-color: #07135c;
-  padding: .5rem;
-  color: white; */
-  }
+  justify-content: end;  
+}
 .nav a {
   /* font-weight: bold; */
   color: darkred !important;
@@ -196,18 +173,18 @@ ul > li  a {
 .app:first-child {
   flex-basis: 100%;
 }
+
 .contact-items {
   margin-top: 50px;
 }
 .contact-me {
-  height: 200px;
+  height: 81vh;
 }
 .about-me h2, .work h2, .contact-me h2 {
   font-size: 3rem;
   color: rgb(7, 19, 73);
 }
 .footer {
-
   background-color: #07135c;
   height: 100px;
   display: flex;
@@ -241,9 +218,12 @@ ul > li  a {
     
     flex-basis: 100%;
   }
-  /* .logo-box {
-    display: none;
-  } */
+
+  .contact-items {
+    margin-top: 25px;
+    line-height: 5rem;
+    letter-spacing: .1rem;
+  } 
 
   .heading-primary-main {
     /* font-size: 30px;
@@ -259,11 +239,7 @@ ul > li  a {
     letter-spacing: 8px;
     text-align: center;
     line-height: 1.25em; */
-  }
-
-  .contact-items {
-    margin-top: 25px;
-  }
+  } 
     
 }
 
