@@ -38,6 +38,15 @@ https://ikaera.github.io/My-Portfolio-IE/
 ![](./assest/Images/Portpolio2.png)
 ![](./assest/Images/Portpolio3.png)
 
+## Credits 
+
+For the pictures I give credits to www.jw.org.
+
+As far as third-party assets I used:
+https://www.w3schools.com/css/css_navbar.asp
+
+I followed tutorials, I include link to it here as well:
+https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274522?start=28#overview
 
 
 
@@ -71,13 +80,17 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-## Credits (n/a)
+## Credits 
+
+For the pictures I give credits to www.jw.org.
 
 List your collaborators, if any, with links to their GitHub profiles.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section:
+https://www.w3schools.com/css/css_navbar.asp
 
-If you followed tutorials, include links to those here as well.
+I followed tutorials, I include links to those here as well:
+https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274522?start=28#overview
 
 ## License (n/a)
 
