@@ -77,7 +77,7 @@ ul>li a {
   width: 100%;
   margin-bottom: 25px;
   background-image:
-    linear-gradient(to right bottom, hsla(251, 100%, 50%, 0.726), white),
+    linear-gradient(to right bottom, white, hsla(251, 100%, 50%, 0.726)),
     url(./Images/enjoy.jpg);
   background-size: cover;
   background-position: bottom;
@@ -146,6 +146,7 @@ ul>li a {
   text-align: center;
   line-height: 3.25rem;
   animation: moveInRight 1s ease-out;
+  text-decoration: none;
 }
 
 .par-about-me {
@@ -188,6 +189,24 @@ ul>li a {
   flex-basis: 100%;
 }
 
+.git-hub-repo {
+  position: relative;
+  margin: 50%;
+  text-decoration: none;
+  font-weight: lighter;
+  color: grey;
+  /* letter-spacing: .1rem; */
+}
+.git-hub-repo:hover {
+  color: white;
+  background-color: #008CBA;
+  transition-duration: 0.4s;
+  text-decoration: solid;
+  font-weight: bolder;
+  padding: .3rem;
+  letter-spacing: .2rem;
+}
+
 .contact-items {
   margin-top: 100px;
   font-size: 1.7rem;
@@ -205,6 +224,12 @@ ul>li a {
   color: rgb(7, 19, 73);
 }
 
+.email {
+  letter-spacing: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:lighter;
+  forced-color-adjust: auto;
+}
 .footer {
   background-color: #07135c;
   height: 100px;
