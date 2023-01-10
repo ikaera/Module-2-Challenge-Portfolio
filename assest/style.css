@@ -197,6 +197,7 @@ ul>li a {
   color: grey;
   /* letter-spacing: .1rem; */
 }
+
 .git-hub-repo:hover {
   color: white;
   background-color: #008CBA;
@@ -227,9 +228,10 @@ ul>li a {
 .email {
   letter-spacing: normal;
   font-family: 'Times New Roman', Times, serif;
-  font-weight:lighter;
+  font-weight: lighter;
   forced-color-adjust: auto;
 }
+
 .footer {
   background-color: #07135c;
   height: 100px;
