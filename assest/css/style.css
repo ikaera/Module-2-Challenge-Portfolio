@@ -78,7 +78,7 @@ ul>li a {
   margin-bottom: 25px;
   background-image:
     linear-gradient(to right bottom, white, hsla(251, 100%, 50%, 0.726)),
-    url(./Images/enjoy.jpg);
+    url(../images/enjoy.jpg);
   background-size: cover;
   background-position: bottom;
   clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
