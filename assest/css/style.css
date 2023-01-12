@@ -168,7 +168,7 @@ ul>li a {
 }
 
 .apps div:hover {
-  border: 2px dotted rgb(52, 190, 214);
+  border: 2px dotted rgb(52, 214, 114);
 }
 
 .app {
@@ -176,12 +176,18 @@ ul>li a {
   flex-basis: calc(50% - 10px);
 }
 
-.app h4 {
+.project-title {
   position: absolute;
   left: 0%;
-  bottom: 5%;
-  background-color: rgb(52, 190, 214);
-  padding: 10px;
+  top: -10px;
+  background-color: rgb(161, 191, 211);
+  padding: 5px;
+  color: darkgreen;
+  font-size: 1.9rem;
+  opacity: 85%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.7rem;
+  font-weight:lighter;
 
 }
 
