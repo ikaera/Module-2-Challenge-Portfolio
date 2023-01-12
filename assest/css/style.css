@@ -121,6 +121,7 @@ ul>li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-position: bottom;
 }
 
 .heading-primary {
@@ -296,7 +297,7 @@ ul>li a {
     color: darkred !important;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: .1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .app {
