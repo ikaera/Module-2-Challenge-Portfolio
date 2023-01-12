@@ -302,7 +302,11 @@ ul>li a {
   .app {
     flex-basis: 100%;
   }
-
+  .par-about-me {
+    text-align:left;
+    text-decoration: #07135c;
+    /* font-size: 5rem; */
+  }
   .contact-items {
     margin-top: 30px;
     line-height: 3.2rem;
