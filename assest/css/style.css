@@ -74,7 +74,7 @@ ul>li a {
 
 .hero {
   height: 95vh;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 25px;
   background-image:
     linear-gradient(to right bottom, white, hsla(251, 100%, 50%, 0.726)),
@@ -94,7 +94,7 @@ ul>li a {
   z-index: 100;
   top: 0;
   left: 0;
-  justify-content: end;
+  justify-content: center;
 }
 
 .nav a {
@@ -292,7 +292,7 @@ ul>li a {
 
   .nav {
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content:flex-start;
     /* align-items:center;
     align-content:flex-start; */
     
