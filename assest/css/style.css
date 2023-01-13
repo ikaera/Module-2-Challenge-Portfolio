@@ -81,6 +81,7 @@ ul>li a {
     url(enjoy.jpg);
   background-size: cover;
   background-position: bottom;
+  background-blend-mode:difference;
   clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
 }
 
