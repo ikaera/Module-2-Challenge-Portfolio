@@ -1,42 +1,42 @@
-# Module-2-Challenge-Advanced-CSS: Portfolio
+# My-Portfolio-IE
 
 ## Description 
 
-### User Story
+This responsive web application allows potential employer
+to view a potential employee's (my) deployed portfolio of work samples
+SO THAT potential employer can review samples of my work and assess whether I am a good candidate for an open position.
 
-```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-```
+## Usage
 
+    * GIVEN I need to sample a potential employee's previous work
+        - WHEN I load their portfolio
+            - THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+        - WHEN I click one of the links in the navigation
+        - THEN the UI scrolls to the corresponding section
+        - WHEN I click on the link to the section about their work
+            - THEN the UI scrolls to a section with titled images of the developer's applications
+        - WHEN I am presented with the developer's first application
+            - THEN that application's image should be larger in size than the others
+        - WHEN I click on the images of the applications
+            - THEN I am taken to that deployed application
+        - WHEN I resize the page or view the site on various screens and devices
+            - THEN I am presented with a responsive layout that adapts to my viewport.
 
-### Acceptance Criteria
-
-
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
-
-### link to deployed application:
+## Links 
+- Deployed Application URL:
 https://ikaera.github.io/My-Portfolio-IE/
+- Repository URL:
+https://github.com/ikaera/My-Portfolio-IE
 
-## Usage 
-![](./assest/Images/Portpolio1.png)
-![](./assest/Images/Portpolio2.png)
-![](./assest/Images/Portpolio3.png)
+## Screenshot 
+![](./assest/images/Screenshot.png)
+![](.)
+![](.)
+
+## Technology Used:
+    - HTML
+    - CSS. 
+    
 
 ## Credits 
 
