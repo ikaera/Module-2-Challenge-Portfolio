@@ -31,6 +31,7 @@ https://github.com/ikaera/My-Portfolio-IE
 ## Screenshot 
 
 ![](./assest/images/Screenshot.jpg)
+![](./assest/Screenshot.jpg)
 
 
 ## Technology Used:
