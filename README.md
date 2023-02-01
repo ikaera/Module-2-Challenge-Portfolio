@@ -30,7 +30,7 @@ https://github.com/ikaera/My-Portfolio-IE
 
 ## Screenshot 
 
-![](./assest/images/ScreenshotUse.png)
+![](./assest/images/Portpolio1.png)
 
 
 ## Technology Used:
