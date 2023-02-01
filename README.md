@@ -29,9 +29,9 @@ https://ikaera.github.io/My-Portfolio-IE/
 https://github.com/ikaera/My-Portfolio-IE
 
 ## Screenshot 
+
 ![](./assest/images/Screenshot.png)
-![](.)
-![](.)
+
 
 ## Technology Used:
     - HTML
