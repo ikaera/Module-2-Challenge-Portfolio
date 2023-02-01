@@ -8,19 +8,19 @@ SO THAT potential employer can review samples of my work and assess whether I am
 
 ## Usage
 
-    * GIVEN I need to sample a potential employee's previous work
-        - WHEN I load their portfolio
-            - THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-        - WHEN I click one of the links in the navigation
-        - THEN the UI scrolls to the corresponding section
-        - WHEN I click on the link to the section about their work
-            - THEN the UI scrolls to a section with titled images of the developer's applications
-        - WHEN I am presented with the developer's first application
-            - THEN that application's image should be larger in size than the others
-        - WHEN I click on the images of the applications
-            - THEN I am taken to that deployed application
-        - WHEN I resize the page or view the site on various screens and devices
-            - THEN I am presented with a responsive layout that adapts to my viewport.
+    * GIVEN potential employer needs to sample a potential employee's previous work;
+        - WHEN potential employer loads their portfolio,
+            - THEN potential employer is presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them;
+        - WHEN potential employer clicks one of the links in the navigation,
+            - THEN the UI scrolls to the corresponding section;
+        - WHEN potential employer clicks on the link to the section about their work,
+            - THEN the UI scrolls to a section with titled images of the developer's applications;
+        - WHEN potential employer is presented with the developer's first application,
+            - THEN that application's image should be larger in size than the others;
+        - WHEN potential employer clicks on the images of the applications,
+            - THEN potential employer is taken to that deployed application;
+        - WHEN potential employer resizes the page or view the site on various screens and devices,
+            - THEN potential employer is presented with a responsive layout that adapts to my viewport.
 
 ## Links 
 - Deployed Application URL:
