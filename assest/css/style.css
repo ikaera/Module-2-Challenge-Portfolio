@@ -16,7 +16,7 @@ html {
 
 /* tag selectors */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7em;
@@ -51,7 +51,7 @@ ul {
   justify-content: space-around;
 }
 
-ul>li a {
+ul > li a {
   text-decoration: none;
   color: rgba(0, 0, 255, 0.74);
   font-size: 2rem;
@@ -76,12 +76,16 @@ ul>li a {
   height: 95vh;
   width: 100vw;
   margin-bottom: 25px;
-  background-image:
-    linear-gradient(to right bottom, white, hsla(251, 100%, 50%, 0.726)),
+  background-image: linear-gradient(
+      to right bottom,
+      white,
+      rgba(47, 0, 255, 0.726)
+    ),
     url(enjoy.jpg);
   background-size: cover;
   background-position: bottom;
-  background-blend-mode:difference;
+  background-blend-mode: difference;
+  /* background: rgba(0, 0, 0, 0.4); */
   clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
 }
 
@@ -102,7 +106,7 @@ ul>li a {
   /* font-weight: bold; */
   color: darkred !important;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-size: 1.8rem;
 }
 
@@ -110,7 +114,6 @@ ul>li a {
   position: absolute;
   top: 4.3rem;
   /* left: 0.5rem; */
-
 }
 
 .logo {
@@ -145,13 +148,13 @@ ul>li a {
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   line-height: 2.25rem;
   animation: moveInRight 1s ease-out;
   text-decoration: none;
   border: none;
-  background-color: #2196F3;
+  background-color: #2196f3;
   cursor: pointer;
   padding: 1.25rem 2.5rem;
   border-radius: 10rem;
@@ -187,6 +190,12 @@ ul>li a {
 
 .apps img {
   width: 100%;
+  height: 80%;
+  opacity: 40%;
+}
+
+.apps img:hover {
+  opacity: 100%;
 }
 
 .apps div:hover {
@@ -207,10 +216,9 @@ ul>li a {
   color: darkgreen;
   font-size: 1.9rem;
   opacity: 85%;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.9rem;
-  font-weight:lighter;
-
+  font-weight: lighter;
 }
 
 .app:first-child {
@@ -228,18 +236,18 @@ ul>li a {
 
 .git-hub-repo:hover {
   color: white;
-  background-color: #008CBA;
+  background-color: #008cba;
   transition-duration: 0.4s;
   text-decoration: solid;
   font-weight: bolder;
-  padding: .3rem;
-  letter-spacing: .2rem;
+  padding: 0.3rem;
+  letter-spacing: 0.2rem;
 }
 
 .contact-items {
   margin-top: 100px;
   font-size: 1.7rem;
-  text-decoration: solid
+  text-decoration: solid;
 }
 
 .contact-me {
@@ -268,13 +276,12 @@ ul>li a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .copyright {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
-
 
 /* media queries (desktop-first) */
 
@@ -283,25 +290,23 @@ ul>li a {
 @media screen and (max-width: 900px) { } */
 
 @media screen and (max-width: 800px) {
-
   /* Use flex-direction to stack the navbar and contact ul. */
   .nav {
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     position: fixed;
-    z-index: 100;  
+    z-index: 100;
     top: 0;
     left: 0;
     /* align-items:center;
     align-content:flex-start; */
-    
   }
 
   .nav a {
     /* font-weight: bold; */
     color: darkred !important;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-size: 1.5rem;
   }
 
@@ -309,19 +314,19 @@ ul>li a {
     flex-basis: 100%;
   }
   .par-about-me {
-    text-align:left;
+    text-align: left;
     text-decoration: #07135c;
     /* font-size: 5rem; */
   }
   .contact-items {
     margin-top: 30px;
     line-height: 3.2rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
 
   ul {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
   /* 
   .heading-primary-main {
