@@ -28,3 +28,21 @@ btnContainerEl.addEventListener('click', evt => {
     console.log(projectData);
   });
 });
+
+// JQuery US Tooltip - custom styling
+$(function () {
+  $(document).tooltip({
+    position: {
+      my: 'center bottom-20',
+      at: 'center top',
+      using: function (position, feedback) {
+        $(this).css(position);
+        $('<div>')
+          .addClass('arrow')
+          .addClass(feedback.vertical)
+          .addClass(feedback.horizontal)
+          .appendTo(this);
+      },
+    },
+  });
+});
