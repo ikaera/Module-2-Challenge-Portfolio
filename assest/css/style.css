@@ -81,10 +81,10 @@ ul > li a {
       white,
       rgba(47, 0, 255, 0.726)
     ),
-    url(enjoy.jpg);
+    url(../full-stack-development.jpg);
   background-size: cover;
-  background-position: bottom;
-  background-blend-mode: difference;
+  background-position: center;
+  background-blend-mode: darken;
   /* background: rgba(0, 0, 0, 0.4); */
   clip-path: polygon(0 1.58rem, 100% 1.58rem, 100% 90vh, 0 100%);
 }
@@ -137,7 +137,7 @@ ul > li a {
 
 .heading-primary-main {
   display: block;
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
   letter-spacing: 1.3rem;
   line-height: 4.4rem;
