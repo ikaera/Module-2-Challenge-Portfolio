@@ -198,9 +198,9 @@ ul > li a {
   opacity: 100%;
 }
 
-.apps div:hover {
-  border: 2px dotted rgb(52, 214, 114);
-}
+/* .apps div:hover { */
+/* border: 0.2px dotted whitesmoke; */
+/* } */
 
 .app {
   position: relative;
