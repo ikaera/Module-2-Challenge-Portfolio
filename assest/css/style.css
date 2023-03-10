@@ -36,9 +36,9 @@ a h2 {
   text-decoration: none;
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 main {
   /* display: flex;
@@ -190,8 +190,8 @@ ul > li a {
 
 .apps img {
   width: 100%;
-  height: 80%;
-  opacity: 40%;
+  height: 56%;
+  opacity: 25%;
 }
 
 .apps img:hover {
@@ -205,6 +205,9 @@ ul > li a {
 .app {
   position: relative;
   flex-basis: calc(50% - 10px);
+  border: 1px dotted rgba(128, 128, 128, 0.486);
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .project-title {
@@ -242,6 +245,79 @@ ul > li a {
   font-weight: bolder;
   padding: 0.3rem;
   letter-spacing: 0.2rem;
+}
+
+/* tooltip  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.889);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* .tooltiptext-git {
+  visibility: hidden;
+  width: 30vw;
+  background-color: white;
+  color: green;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+} */
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .tech-container {
+  display: inline-block;
+} */
+
+.tech-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: disc;
+  color: #07135c;
+}
+
+.tech-ul li {
+  font-size: 2rem;
+  background-color: aquamarine;
 }
 
 .contact-items {
@@ -289,6 +365,7 @@ ul > li a {
   background: black;
   border: 2px solid white;
 }
+
 .ui-tooltip {
   padding: 10px 20px;
   color: white;
@@ -297,6 +374,7 @@ ul > li a {
   text-transform: none;
   box-shadow: 0 0 7px black;
 }
+
 .arrow {
   width: 70px;
   height: 16px;
@@ -306,13 +384,16 @@ ul > li a {
   margin-left: -35px;
   bottom: -16px;
 }
+
 .arrow.top {
   top: -16px;
   bottom: auto;
 }
+
 .arrow.left {
   left: 20%;
 }
+
 .arrow:after {
   content: '';
   position: absolute;
@@ -325,6 +406,7 @@ ul > li a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .arrow.top:after {
   bottom: -20px;
   top: auto;
@@ -332,9 +414,21 @@ ul > li a {
 
 /* media queries (desktop-first) */
 
-/* @media screen and (max-width: 1200px) { } 
+/* @media screen and (max-width: 1200px) { } */
 
-@media screen and (max-width: 900px) { } */
+@media screen and (max-width: 900px) {
+  .user-story-el {
+    display: none;
+  }
+
+  .tech-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    color: #07135c;
+    list-style-type: circle;
+    padding-left: 30px;
+  }
+}
 
 @media screen and (max-width: 800px) {
   /* Use flex-direction to stack the navbar and contact ul. */
@@ -360,11 +454,13 @@ ul > li a {
   .app {
     flex-basis: 100%;
   }
+
   .par-about-me {
     text-align: left;
     text-decoration: #07135c;
     /* font-size: 5rem; */
   }
+
   .contact-items {
     margin-top: 30px;
     line-height: 3.2rem;
@@ -379,6 +475,7 @@ ul > li a {
   .heading-primary-main {
     font-size: 4.5rem;
   }
+
   /* 
   .heading-primary-sub {
     /* display: block;
