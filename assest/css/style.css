@@ -122,7 +122,7 @@ ul > li a {
 
 .text-box {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-position: bottom;
@@ -162,7 +162,7 @@ ul > li a {
   color: #035699;
   margin: 6px 2px;
   /* padding: 15px 32px; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .heading-primary-sub:hover {
@@ -223,7 +223,22 @@ ul > li a {
   line-height: 1.9rem;
   font-weight: lighter;
 }
+/* stack overflow */
+.activeLnk {
+  background: red;
+}
 
+.resume {
+  font-size: 1.7rem;
+  font-variant: small-caps;
+  background: black;
+  color: white;
+  padding-left: 5px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border-radius: 25px;
+}
 .app:first-child {
   flex-basis: 100%;
 }

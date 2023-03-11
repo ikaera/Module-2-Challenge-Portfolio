@@ -47,6 +47,38 @@ btnContainerEl.addEventListener('click', evt => {
   console.log(renderProjects);
 });
 
+//
+$('ul li a').on('click', function () {
+  $('div').removeClass('activeLnk');
+  $('div[id=' + $(this).attr('data-related') + ']').addClass('activeLnk');
+});
+
+{
+  /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<ul>
+  <li><a href="#" class="active" data-related="main">Main</a>
+
+  </li>
+  <li><a href="#" data-related="title_1">Title 1</a>
+
+  </li>
+  <li><a href="#" data-related="title_2">Title 2</a>
+
+  </li>
+  <li><a href="#" data-related="title_3">Title 3</a>
+
+  </li>
+  <li><a href="#" data-related="title_4">Title 4</a>
+
+  </li>
+</ul>
+<div id="main">... Content ...</div>
+<div id="title_1">... Content ...</div>
+<div id="title_2">... Content ...</div>
+<div id="title_3">... Content ...</div>
+<div id="title_4">... Content ...</div> */
+}
+
 // JQuery US Tooltip - custom styling
 $(function () {
   $(document).tooltip({
