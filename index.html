@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Portfolio</title>
   <link rel="stylesheet" href="./assest/css/reset.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/icon-font.css"> -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
   <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
@@ -44,12 +48,15 @@
       <img class="my-photo" src="./assest/Images/passport.jfif" alt="my photo">
 
       <p class="par-about-me">
-        <q> <em> <strong> If anyone thinks he knows something, he does not yet know it as he should know it. </strong></em></q>
+        <q> <em> <strong> If anyone thinks he knows something, he does not yet know it as he should know it.
+            </strong></em></q>
         <br>
-        This quote from God's Word, the Bible, which I admire, describes the <em> growth mindset</em> very well. For me it
-        means actively seeking learning opportunities. 
+        This quote from God's Word, the Bible, which I admire, describes the <em> growth mindset</em> very well. For me
+        it
+        means actively seeking learning opportunities.
         <br>
-        This way of thinking is vital and helpful to me who desires to be more and more involved in the ever-developing and ever-advancing computer science industry. 
+        This way of thinking is vital and helpful to me who desires to be more and more involved in the ever-developing
+        and ever-advancing computer science industry.
 
 
         <br><br>
@@ -66,49 +73,145 @@
     </section>
     <hr>
     <section id="work" class="work">
-      <h2>Work</h2>
-      <article id="apps" class="apps">
-        <div class="app">
+      <h2>Work 
+        <span><code class="resume"> <a href="https://docs.google.com/document/d/1677J2jOdyiuQ-0EPw6GkmcUUQn2_Ep26BrRXIZv2amk/edit?usp=sharing" target="_blank"> Resume=> </a></code>
+        </span>          
+      </h2> 
+      <br>
+      <p>Type a skill in the input field to search the list for specific project(s) that was built using chosen
+        technology:</p>
+      <input id="myInput" type="text" placeholder="Search..">
+
+      <br>
+      <p>... or push a skill-button to search the list for specific project(s) that was built using clicked technology:
+      </p>
+      <div id="tech-container">
+      </div>
+      <!-- <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">PROJECT NAME</th>
+            <th scope="col">Technology Stack</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>  -->
+      <article id="apps" class="apps myDIV">
+        <div class="app " id="booze-hound">
           <a href="https://jsrra.github.io/Booze-Hound/" target="_blank" class="app1-title">
-            <img src="./assest/Booze-Hound.jpg" alt="app">
+            <img class="project-image" src="./assest/Booze-Hound.jpg" alt="app">
+            <h4 class="project-title">
+              <div class="tooltip">
+                <!-- <span class="tooltiptext">AS A traveler I WANT to be able to enter a city into a search field to surface pertinent information about the bars located in that city, SO THAT I can make better informed decisions.           
+                </span> -->
 
-            <h4 class="project-title"> PROJECT<br></Project:br> Booze Hound</h4>
+                <a href="https://jsrra.github.io/Booze-Hound/" target="_blank">
+                  Booze Hound
+                  <a class='tooltiptext' href="https://github.com/Jsrra/Booze-Hound" target="_blank">GitHub</a>
+                </a>
+              </div>
+            </h4>
           </a>
-          <a class="git-hub-repo" href="https://github.com/Jsrra/Booze-Hound" target="_blank">GitHub</a>
+          <div class="tech-container">
+            <div class="user-story-el">
+              <h3 class="user-story">User Story</h3>
+              <code> AS A person that wants to easily discover new bars in any given location,
+              I WANT to be able to enter a city into a search field to surface pertinent information about the bars located in that city such as the name, address, and website,
+              SO THAT I can make better informed decisions when ultimately deciding which establishment to patronize.</code>
+              <ul class="app-links">
+                <li><a href="https://jsrra.github.io/Booze-Hound/">Deployed Application ==></a></li>
+                <li><a href="https://github.com/Jsrra/Booze-Hound"><code> GitHub Repository==> </code></a></li>
+              </ul>
+            </div>
+            <h3>Technologies Used:</h3>
+            <ul class="tech-ul">
+              <li> <code> HTML </code></li>
+              <li> <code> JavaScript </code></li>
+              <li> <code> CSS </code></li>
+              <li> <code> JQuery-UI </code></li>
+            </ul>
+          </div>
+          <!-- <a class="git-hub-repo" href="https://github.com/Jsrra/Booze-Hound" target="_blank">GitHub</a> -->
         </div>
-        <div class="app">
-          <a href="https://ikaera.github.io/Mod6-Server-Side-APIs-Challenge-WeatherDashboard/" target="_blank" class="app1-title">
+        <div class="app" id="weather-dashboard">
+          <a href="https://ikaera.github.io/Mod6-Server-Side-APIs-Challenge-WeatherDashboard/" target="_blank"
+            class="app1-title">
             <img src="./assest/Images/weatherDashboard.png" alt="App3">
-            <h4 class="project-title">Weather Dashboard<br></h4>
+            <h4 class="project-title"><a href="http://jqueryui.com/themeroller/" title="User Story: AS A traveler
+              I WANT to see the weather outlook for multiple cities
+              SO THAT I can plan a trip accordingly.">Weather Dashboard
+              </a><br></h4>
           </a>
-          <a class="git-hub-repo" href="https://github.com/ikaera/Mod6-Server-Side-APIs-Challenge-WeatherDashboard" target="_blank">GitHub</a>
-        </div>      
+          <a class="git-hub-repo" href="https://github.com/ikaera/Mod6-Server-Side-APIs-Challenge-WeatherDashboard"
+            target="_blank">GitHub</a>
+        </div>
 
-        <div class="app">
+        <div class="app" id="code-quiz">
           <a href="https://ikaera.github.io/Code-Quiz-WebDiv-IE/" target="_blank" class="app1-title">
             <img src="./assest/Images/codeQ.png" alt="Code-Quiz">
-            <h4 class="project-title"> PROJECT<br>Code Quiz</h4>
+            <h4 class="project-title"><a href="http://jqueryui.com/themeroller/" title="User Story: AS A coding boot camp student,
+              I WANT to take a timed quiz on JavaScript fundamentals that stores high scores;
+              SO THAT I can gauge my progress compared to my peers.">Code Quiz</a></h4>
           </a>
-          <a class="git-hub-repo" href="https://github.com/ikaera/Code-Quiz-WebDiv-IE" target="_blank">GitHub</a>
+          <!-- <a class="git-hub-repo" href="https://github.com/ikaera/Code-Quiz-WebDiv-IE" target="_blank">GitHub</a> -->
         </div>
 
-        <div class="app">
+        <div class="app" id="password-generator">
           <a href="https://ikaera.github.io/Password-Generator-IE/" target="_blank" class="app1-title">
             <img src="./assest/Images/passwordG.png" alt="App3">
-            <h4 class="project-title">PROJECT<br>Password Generator</h4>
+            <h4 class="project-title"><a href="http://jqueryui.com/themeroller/" title="User Story: AS AN employee with access to sensitive data,
+              I WANT to randomly generate a password that meets certain criteria;
+              SO THAT I can create a strong password that provides greater security.">Password Generator</a>
+            </h4>
           </a>
           <a class="git-hub-repo" href="https://github.com/ikaera/Password-Generator-IE" target="_blank">GitHub</a>
         </div>
 
-        <div class="app">
+        <div class="app" id="work-day-sch">
           <a href="https://ikaera.github.io/Irakli-Work-Day-Scheduler-Mod5/" target="_blank" class="app1-title">
             <img src="./assest/Images/scheduler.png" alt="App2">
-            <h4 class="project-title"> PROJECT<br>Work-Day-Scheduler</h4>
+            <h4 class="project-title"> <a href="http://jqueryui.com/themeroller/" title="User Story: AS AN employee with a busy schedule,
+              I WANT to add important events to a daily planner;
+              SO THAT I can manage my time effectively.">Work-Day-Scheduler
+              </a>
+            </h4>
           </a>
           <a class="git-hub-repo" href="https://github.com/ikaera/Irakli-Work-Day-Scheduler-Mod5"
             target="_blank">GitHub</a>
-        </div>        
-        
+        </div>
+
       </article>
     </section>
     <hr>
@@ -140,7 +243,12 @@
   <footer class="footer">
     <p> <span class="copyright">Copyright &copy; 2022</span> {ie} </p>
   </footer>
-  <!-- <script src="./assest/js/script.js"></script> -->
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+
+  <script src="./assest/js/script.js"></script>
 </body>
 
 </html>
